@@ -1,0 +1,38 @@
+{% load static %} 
+{% extends 'base.html' %}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fabien-Login</title>
+</head>
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="{% static 'Img/img_avatar2.png' %}" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br> 
+     <label for="">
+      <input type="checkbox" checked="checked" name="remember">Remember me</label> 
+     <br>  
+  </div>
+
+  <div class="container1" style="background-color:#f1f1f1">
+    <button type="submit">Login</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+    
+    <label>
+      <br> 
+        <span class="psw">Forgot <a href="#">password?</a> </label>
+      <label>
+        <br> 
+          <span> Don't have an account <a href="register.html">Create an account</a></span>
+          <br> 
+          <br> 
+    </label>
+  </div>
+</form>

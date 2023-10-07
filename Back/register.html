@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fabien-Register</title>
+<link rel="icon" href="img/bio.JPG" type="image/icon type">
+<style>
+    *{
+        box-sizing: border-box;  
+    }
+    body{
+    width:100%;
+    height: 80%;
+    margin-left:5%;
+    margin-right: 5%; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: e5e5e5;
+
+        background-color: #075d72;
+    }
+    .menu {
+  float: right; 
+  width: 100%;
+  height: 5%;
+  text-align: right;
+  background-color:rgb(107, 106, 163);
+  border-top-right-radius: 1%;
+  border-top-left-radius: 1%;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+}
+.menu h1{
+    float: left; 
+}
+.menu a {
+  background-color: #e5e5e5;
+  padding: 1%;
+  margin-top: 1%;
+  display:inline;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  border-radius: 5%;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+}
+input[type=text],input[type=date],input[type=file], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 30%;
+    display: inline-block;
+    border: 1px solid #075d72;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label,h2,input[type=submit]{
+    margin-left: 30%;
+}
+
+div {
+    border-radius: 5px;
+    padding: 40px;
+    width: 100%;
+    /* height: 10px; */
+    /* margin-left: 30%; */
+    background-color: aliceblue;
+}
+
+a{
+    background: none;
+}
+@media screen and (max-width:800px) {
+    .menu, .left, .main, .right {
+    width: 100%;
+  }
+  .menu a{
+    display: block;
+    float: right;
+    text-align: center;
+  }
+    .form {
+    border-radius: 5px;
+    padding: 0px; 
+    width: 100%;
+    /* height: 10%; */
+    margin-left: 0%; 
+}
+    input[type=text],input[type=date],input[type=file], select {
+    width: 95%;
+    padding: 2px 4px; 
+    margin: 8px 0; 
+    margin-left: 8px;
+    display: inline-block;
+    border: 1px solid #075d72;
+    border-radius: 4px;
+    box-sizing: border-box;
+}   
+label,h1,input[type=submit]{
+    margin-left: 8px;
+}
+}
+</style>
+</head>
+<body>
+        <div style="overflow:auto">
+            <div class="menu">
+             <h1>Fabien NIYIGABA</h1>
+              <a href="index.html">Home</a>
+                <a href="#">About Me</a>
+                <a href="skills.html">Skills</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact Me</a>
+                <a href="login.html">Login</a>
+            </div>
+            </div>
+            <div class="form">
+        <!-- <label  class="titleForRegister"> -->
+            <h2>Register</h2>  
+        <!-- </label> -->
+        <form action="">
+            <input type="text" id="fname" name="firstname" placeholder="First Name" required >
+            <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+            <input type="text" id="mdname" name="mdname" placeholder="Middle Name" required>,<br>
+            <label for="">Date of birth </label><br>
+            <input type="date" name="dob" id="dob" placeholder="Date Of Birth" required>
+            <input type="text" id="phone" name="phonenumber" placeholder="Phone Number" required>
+            <input type="text" id="Address" name="Address" placeholder="Address" required><br>
+            <input type="submit" value="Register" required>
+        </form>
+        <label for="">Already have an account? <strong><a href="login.html">SignIn</a></strong></label>
+    </div>
+</body>
+</html>

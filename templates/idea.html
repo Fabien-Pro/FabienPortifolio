@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea recording system</title>
+    <style>
+       textarea, input,button{
+            display: block;
+            margin-left: 30%;
+            margin-right: 10%;
+            font-size: large;
+            border-radius: 1%;
+            border: 0.5%;
+            border-color: blue;
+        
+        }
+        input,textarea{
+            width: 35%;
+            height: 20%;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        button{
+            background-color: greenyellow;
+            border-radius: 100px;
+            padding: 10px 20px;
+            width: 35%;
+        }
+        label{
+            display: block;
+            margin-left: 30%;
+            margin-right: 10%;
+            font-size: large; 
+            font-family: system-ui;
+        }
+        h1,h2{
+            margin-left: 30%;
+            margin-right: 10%;  
+        }
+        .form{
+            border:5%;
+            border-color: rgb(22, 24, 24);
+            border-radius: 1%;
+            background-color:aliceblue;
+            /* margin-left: 10%;
+            margin-right: 10%; */
+            box-shadow:40px rgb(22, 24, 24);
+        }
+        #form1{
+            float: left;
+            background-color:aliceblue;
+            width: 50%;
+            height: 60%;
+        }
+        #form2{
+            float: right;
+            margin-top: 0%;
+            background-color:aliceblue;
+            width: 50%;
+            height: 60%;
+        }
+        @media only screen and (max-width: 600px) {
+            textarea,label, input,h1,h2,button{
+            display: block;
+            margin-left: 2%;
+            margin-right: 2%;
+        }   
+        textarea,input,button{
+            width: 90%;
+        }
+        #form1,#form2{
+            display: block;
+            width:100% ;
+        }
+       
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div id="form1">
+    <h1>Idea recording system</h1>
+    <hr>
+    <label for="">What is your idea</label><input type="text" placeholder="Your idea">
+    <label for="">Describe your idea</label><textarea type="text" placeholder="Details about your idea"></textarea>
+    <label for="">Mission of your idea</label><input type="text" placeholder="Mission of your idea">
+    <label for="">Impact of your idea to you</label><textarea type="text" placeholder="Impact of your idea"></textarea>
+    <label for="">Impact of your idea to society</label><textarea type="text" placeholder="Impact of your idea"></textarea>
+    <label for="">Vision of your idea</label><input type="text" placeholder=" Vision of your idea">
+    <hr>
+    </div>
+    <div id="form2">
+ <h1>Implementing your idea</h1>
+ <hr>
+    <label for="">Set time for implementing your idea</label><input type="text" placeholder="Range of year">
+    <label for="">Resources for implementing your idea</label>
+    <label for="">Resource 1</label><input type="text" placeholder="Enter Resource number 1">
+    <label for="">Set time for implementing your idea</label><input type="text" placeholder="Range of year">
+    <label for="">Resources for implementing your idea</label>
+    <label for="">Resource 1</label><input type="text" placeholder="Enter Resource number 1">
+    <label for="">Resource 1</label><input type="text" placeholder="Enter Resource number 1"><br>
+    <button>Add New Resource</button>
+    <hr>
+</div>
+</div>
+</body>
+</html>
