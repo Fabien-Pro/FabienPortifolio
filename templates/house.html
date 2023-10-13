@@ -4,13 +4,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fabien-Register</title>
 <link rel="icon" href="img/bio.JPG" type="image/icon type">
+<link rel="stylesheet" href="../static/css/index.css">
 <style>
     *{
         box-sizing: border-box;  
     }
     body{
-        background-color: #075d72;
-    }
+            font-family: Verdana, sans-serif;
+            color: #ffffff;
+            background-color: rgb(49, 64, 69);
+            margin: 0;
+            padding: 0;
+            width: 100%; /* Adjust as needed */
+            margin: 0 auto; /* Center the body */
+            /* max-height: 90vh;  */
+            /* overflow-y: auto;  */
+        }
+
     .menu {
   float: right; 
   width: 100%;
@@ -21,20 +31,43 @@
   border-top-left-radius: 1%;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
 }
-.menu h1{
-    float: left;
+.menu {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(70, 87, 94);
+    /* background-color: rgb(41, 128, 185); */
 }
+
+.menu h1 {
+    margin: 0;
+    font-size: 36px; /* Increase the font size */
+    color: #ffffff; /* Set the font color */
+    text-transform: uppercase; /* Uppercase text */
+}
+
 .menu a {
-  background-color: #e5e5e5;
-  padding: 1%;
-  margin-top: 1%;
-  display:inline;
-  width: 100%;
-  color: black;
-  text-decoration: none;
-  border-radius: 5%;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    background-color: none;
 }
+
+.menu a:hover {
+    background-color: rgb(52, 152, 219);
+    color: #ffffff; 
+}
+
+.footer {
+            background-color: rgb(156, 204, 146);
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            position: fixed;
+            height: 10%;
+            width: 100%;
+        }
+
 input[type=text],input[type=date],input[type=file], select {
     width: 100%;
     padding: 12px 20px;
@@ -45,10 +78,11 @@ input[type=text],input[type=date],input[type=file], select {
     box-sizing: border-box;
 }
 
-div {
+.form {
     border-radius: 5px;
-    padding: 40px;
+    padding: 10px;
     width: 40%;
+    margin-top: -96%;
     /* height: 10px; */
     margin-left: 30%;
     background-color: aliceblue;
@@ -66,7 +100,7 @@ a{
     float: right;
     text-align: center;
   }
-    div {
+    .form {
     border-radius: 5px;
     padding: 0px; 
     width: 100%;
@@ -83,14 +117,14 @@ a{
     border-radius: 4px;
     box-sizing: border-box;
 }   
-label,h1,input[type=submit]{
+label,input[type=submit]{
     margin-left: 8px;
 }
 }
 </style>
 </head>
 <body>
-        <div style="overflow:auto">
+       <div style="overflow:auto">
             <div class="menu">
              <h1>Fabien NIYIGABA</h1>
               <a href="../index.html">Home</a>
@@ -100,8 +134,8 @@ label,h1,input[type=submit]{
                 <a href="#">Contact Me</a>
                 <a href="login.html">Login</a>
             </div>
-            </div>
-            <div>
+        </div>
+        <div class="form">
         <!-- <label  class="titleForRegister"> -->
             <h1>Register</h1>  
         <!-- </label> -->
