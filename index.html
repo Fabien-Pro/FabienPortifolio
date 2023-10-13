@@ -6,61 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabien-Home</title>
     <link rel="icon" href="static/img/bio.JPG">
-<head> <link rel="stylesheet" href="static/css/main.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            color: #ffffff;
+            background-color: rgb(49, 64, 69);
+            margin: 0;
+            padding: 0;
+            width: 95%; /* Adjust as needed */
+            margin: 0 auto; /* Center the body */
+            max-height: 90vh; /* Adjusted max-height */
+            overflow-y: auto; /
+        }
+
+        .menu {
+            /* background-color: #333; */
+            background-color: rgb(70, 87, 94);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .menu a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        .main {
+            text-align: center;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 70%;
+            margin-top: 20%;
+           
+          
+        }
+
+        .mySlides img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: rgb(156, 204, 146);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 95%;
+            height: 10%;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
  </head>
 <body>
-  <body style="font-family:Verdana;color:#ffffff;background-color: rgb(70, 87, 94);">
-    <div style="overflow:auto">
-  <div class="menu">
-   <h1>Fabien NIYIGABA</h1>
-   <a href="index.html">Home</a>
-   <a href="templates/skills.html">Skills</a>
-   <a href="templates/projects.html">Projects</a>
-   <a href="templates/bio.html">Biography</a>
-   <a href="#">Contact Me</a>
-   <a href="templates/login.html">Login</a>
-  </div>
-  </div>
-</div>
-  <div class="main" style="width:90%;margin-left:4%;">
-    <!-- <h2>Gallery</h2> -->
-    <!-- <h2 id="name"></h2> -->
-    <div class="slideshow-container">
+    <div class="menu">
+        <h1>Fabien NIYIGABA</h1>
+        <a href="index.html">Home</a>
+        <a href="templates/skills.html">Skills</a>
+        <a href="templates/projects.html">Projects</a>
+        <a href="templates/bio.html">Biography</a>
+        <a href="#">Contact Me</a>
+        <a href="templates/login.html">Login</a>
+    </div>
+
+    <div class="main">
+        <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="static/img/1.jpeg" alt="" width="70%", height="70%", style="margin-left:15%; border-radius: 5%;">
+        <img src="static/img/1.jpeg">
         <div class="text">My Banana Plant Farm</div>
       </div>
       <div class="mySlides fade">
-        <img src="static/img/pc.png" alt="" width="70%",height="70%", style="margin-left:15%; border-radius: 5%;">
+        <img src="static/img/pc.png">
         <div class="text">ICT make our life easy</div>
       </div>
       <div class="mySlides fade">
-        <img src="static/img/car.jpeg" alt="" width="70%", height="70%",  style="margin-left:15%; border-radius: 5%;">
+        <img src="static/img/car.jpeg">
         <div class="text">Transportation of people and goods.</div>
       </div>
       <div class="mySlides fade">
-          <img src="static/img/2.jpeg" alt="" width="70%",height="70%", style="margin-left:15%; border-radius: 5%;">
+          <img src="static/img/2.jpeg">
           <div class="text">My Banana Plant Farm</div>
       </div>
       <div class="mySlides fade">
-        <img src="static/img/2.jpeg" alt="" width="70%", height="70%", style="margin-left:15%; border-radius: 5%;">
+        <img src="static/img/2.jpeg">
         <div class="text">My Banana Plant Farm</div>
       </div>
+     </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
     </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
-    <script src="static/javascripts/slideshow.js"></script>
-     <!-- <img src="img/1.jpeg" alt="" width="50%",height="50%", style="border-radius: 5%;"> <img src="img/pc.png" alt="" width="50%",height="50%", style="border-radius: 5%;"><img src="img/car.jpeg" alt="" width="50%",height="50%", style="border-radius: 5%;"> -->
-  </div>
 
-<div class="footer" style="background-color:rgb(156, 204, 146);text-align:center;padding:10px;bottom:0;position:fixed;height: 10%;width:100%;">©Copyright Fabien 2023</div>
+    <div class="footer">
+        <p>&copy; Copyright Fabien 2023</p>
+    </div>
+
+    <script src="static/javascripts/slideshow.js"></script>
 </body>
 </html>

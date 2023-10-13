@@ -6,40 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabien-Home</title>
     <link rel="icon" href="../static/img/bio.JPG">
-<head> <link rel="stylesheet" href="../static/css/main.css">
-  <link rel="stylesheet" href="../static/css/index.css">
-
- </head>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <style>
+        body {
+            font-family: Verdana;
+            color: #ffffff;
+            background-color: rgb(70, 87, 94);
+        }
+        .menu {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(70, 87, 94);
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        .menu h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .menu a {
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+        .menu a:hover {
+            background-color: skyblue;
+            color: black;
+        }
+        .right {
+            margin-left: 5%;
+            background-color: skyblue;
+            padding: 20px;
+            float: left;
+            width:25%;
+           /* padding: 15px; */
+            margin-top: 10%;
+            text-align: center;
+        }
+        .main {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: -20%;
+            background-color: none;
+            float: right;
+            justify-content: left;
+        }
+        .footer {
+            background-color: rgb(156, 204, 146);
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            position: fixed;
+            height: 10%;
+            width: 100%;
+        }
+        img{
+            width: 50%;
+    border-radius: 50%;
+        }
+ 
+     
+    </style>
+</head>
 <body>
-  <body style="font-family:Verdana;color:#ffffff;background-color: rgb(70, 87, 94);">
     <div style="overflow:auto">
-  <div class="menu">
-   <h1>Fabien NIYIGABA</h1>
-   <a href="../index.html">Home</a>
-   <a href="skills.html">Skills</a>
-   <a href="projects.html">Projects</a>
-    <a href="bio.html">Biography</a>
-   <a href="#">Contact Me</a>
-   <a href="login.html">Login</a>
-  </div>
-  </div>
-  <div class="right" style="width:60%;margin-left:20%;background-color:skyblue;">
-    <h2>Biography</h2>
-    <img src="../static/img/bio.JPG" alt="" width="50%" height="50%" style="border-radius: 50%;">
-    <p id="demo">
-    <script>
-        let age=26;
-        document.getElementById("demo").innerHTML ="I am Fabien NIYIGABA, firstborn in family of 9 children. I have "+ age +" Years old";
-    </script>I like my siblings and our parents. </p> 
-  </div>
+        <div class="menu">
+            <h1>BIOGRAPHY</h1> 
+            <a href="../index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="bio.html">Biography</a>
+            <a href="#">Contact Me</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="../static/img/bio.JPG" alt="" style="border-radius: 50%;">
+        <!-- <p id="demo">
+            <script>
+                let age = 26;
+                document.getElementById("demo").innerHTML = "I am Fabien NIYIGABA, firstborn in a family of 9 children. I am " + age + " years old.";
+            </script>I like my siblings and our parents.
+        </p> -->
+    </div>
+    <div class="main">
+        <p>
+        <h2>Biography</h2>
+        <h3> STUDY BACKGROUND</h3>
+        <ul>
+            <li>From 2018 until now, University of Rwanda, College of Science and Technology, Bachelor of Science with Honours in Computer Science.</li>
+            <li>From 2015 to 2017, Advanced Level Secondary School studies in Computer Science trade at APENA TSS, KIREHE District; Advanced Level Certificate (A2).</li>
+            <li>From 2012 to 2014, Ordinary Level Secondary School Studies at G.S TWIMPALA, BUGESERA District.</li>
+            <li>From 2005 to 2011, attended Primary School Studies at G.S TWIMPALA.</li>
+        </ul>
+        </p>
+    </div>
 
- <div class="main" style="width:60%;margin-left:20%; margin-top:-50%;">
 
-    <script src="../static/javascripts/slideshow.js"></script>
-     <!-- <img src="img/1.jpeg" alt="" width="50%",height="50%", style="border-radius: 5%;"> <img src="img/pc.png" alt="" width="50%",height="50%", style="border-radius: 5%;"><img src="img/car.jpeg" alt="" width="50%",height="50%", style="border-radius: 5%;"> -->
-  </div>
-</div>
-
-<div class="footer" style="background-color:rgb(156, 204, 146);text-align:center;padding:10px;bottom:0;position:fixed;height: 10%;width:100%;">©Copyright Fabien 2023</div>
+    <div class="footer">©Copyright Fabien 2023</div>
 </body>
 </html>

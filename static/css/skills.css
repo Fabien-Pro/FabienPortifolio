@@ -12,7 +12,8 @@ float: right;
 width: 100%;
 height: 10%;
 text-align: right;
-background-color:rgb(139, 186, 218);
+background-color: rgb(70, 87, 94);
+/* background-color:rgb(139, 186, 218); */
 margin-bottom: 100%;
 
 /* border-top-right-radius: 1%;
@@ -23,7 +24,7 @@ box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
 float: left;
 }
 .menu a {
-background-color: #e5e5e5;
+
 padding: 1%;
 margin-top: 7px;
 display:inline;
