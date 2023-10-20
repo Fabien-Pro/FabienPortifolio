@@ -21,7 +21,7 @@ box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
 float: left; 
 }
 .menu a {
-background-color: #e5e5e5;
+background-color:none;
 padding: 1%;
 margin-top: 1%;
 display:inline;
@@ -40,9 +40,11 @@ form {border: 3px solid #f1f1f1;
     margin-top: 5%;
     border-radius: 1%;
     background-color: aliceblue;
+    margin-bottom: 10%;
   }
   form h2{
     margin-left: 28%;
+    color:black;
   }
 
 input[type=text], input[type=password], input[type=date]{
@@ -98,15 +100,18 @@ background: none;
 .menu, .left, .main, .right {
 width: 100%;
 }
+
 .menu a{
 display: block;
 float: right;
 text-align: center;
 }
 form {
+  display: block;
 border-radius: 5px;
 padding: 0px; 
 width: 100%;
+margin-top: 70%;
 /* height: 10%; */
 margin-left: 0%; 
 }
