@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabien-Login</title>
     <link rel="icon" href="../static/img/bio.JPG">
-<head> <link rel="stylesheet" href="../static/css/login.css"> </head>
+<head> 
+  <link rel="stylesheet" href="../static/css/login.css"> 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <style>
   .menu {
             text-align: center;
@@ -43,6 +45,7 @@
             width: 100%;
         }
 </style>
+</head>
 <body>
   <body style="font-family:Verdana;color:#ffffff;background-color: rgb(70, 87, 94);">
     <div style="overflow:auto">
@@ -64,10 +67,11 @@
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
+   <input type="text" placeholder="Enter Username" name="uname" required>
+    <!-- <i class='bx bx-user'></i> -->
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
+    <!-- <i class='bx bx-lock'></i> -->
     <br> 
      <label for="">
       <input type="checkbox" checked="checked" name="remember">Remember me</label> 
